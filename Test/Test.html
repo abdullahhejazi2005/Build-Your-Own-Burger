@@ -1,0 +1,109 @@
+<html>
+    <header>
+        <h1>Welcome</h1>
+            <h2>Build your own burger</h2>
+                <p>Deleveries only to Aramoun, Bchamoun, and khaldeh</p>
+                <br>
+    </header>
+    <body>
+        <section class="burger-quantity">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" required pattern="[0-9]{1-2}">
+        </section>
+        <br>
+        <section class="protien-type"
+            <label for="pritien">What type of protien do you want</label>
+            <select id="protien" name="protien" required>
+                <option value="beef">Beef</option>
+                <option value="chicken">Chicken</option>
+                <option value="fish">Fish</option>
+            </select>
+        </section>
+        <br>
+        <section class="burger-size">
+            <label for="size">Size</label>
+            <select id="size" name="size" required>
+                <option value="small">Small</option>
+                <option value="meduim">Meduim</option>
+                <option value="large">Large</option>
+            </select>
+        </section>
+        <br>
+        <section class="cooked">
+            <label for="doneness">How do you want your burger cooked</label>
+            <br>
+            <span>Rare</span>
+            <input type="range" name="doneness" id="doneness" min="1" max="3" required>
+            <span>Well-Cooked</span>    
+        </section>  
+        <br> 
+        <section class="toppings">
+            <label for="tomato">Choose your toppings:</label>
+            <br>
+            <input type="checkbox" name="topping" id="tomato" value="tomato">
+            <label for="tomato">Tomato</label>
+            <br>                
+            <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+            <label for="lettuce">Lettuce</label>
+            <br>  
+            <input type="checkbox" name="topping" id="Onion" value="Onion">
+            <label for="onion">Onion</label>
+            <br>
+            <input type="checkbox" name="topping" id="cheese" value="cheese">
+            <label for="cheese">Cheese</label>
+        </section>
+        <br>
+        <section class="sauces">
+            <label for="dipping-sauces">Dipping sauces:</label>
+            <br>
+                <label for="ketchup">Ketchup</label>
+                <input type="checkbox" id="ketchup" name="sauce" value="ketchup">
+                <br>
+                <label for="mayo">Mayo</label>
+                <input type="checkbox" id="mayo" name="sauce" value="mayo">
+                <br>
+                <label for="coktail">Coktail</label>
+                <input type="checkbox" id="coktail" name="sauce" value="coktail">
+                <br>
+                <label for="chedder">Chedder</label>
+                <input type="checkbox" id="chedder" name="sauce" value="chedder">
+        </section>
+        <br>
+        <br>
+        <section class="costumer's-info">
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" name="first-name" required>
+            <label for="family-name">Family Name</label>
+            <input id="family-name" type="text" name="family-name" required>
+            <label for="phone-number">Phone number</label>
+            <input id="phone-number" type="text" name="phone-number"required>
+            <br>
+            <label for="credit-card">Credit card</label>
+            <input id="credit-card" type="text" name="credit-card" required pattern="[0-9]{14-16}" maxlength="14" minlength="16">
+            <label for="security-code">Security Code</label>
+            <input id="security-code" type="security-code" name="security-code" required pattern="[0-9]{3-3}" maxlength="3" minlength="3">
+        </section>
+        <br>
+        <section class="costumer's-location">
+            <label for="city">City</label>
+            <select id="city" name="location">
+                <option value="Aramoun">Aramoun</option>
+                <option value="Bchamoun">Bchamoun</option>
+                <option value="Khaldeh">Khalde</option>
+            </select>
+            <br>
+            <label for="street">Street</label>
+            <input type="text" id="street" name="location" required>
+            <br>
+            <label for="building">Building</label>
+            <input type="text" id="building" name="location" required>
+            <br>
+            <label for="floor">Floor</label>
+            <input type="text" id="floor" name="location" required>
+        </section>
+            <br>
+        <section class="submission">
+            <input id="submit" type="submit"value="Submit Your Order">
+        </section>
+    </body>
+</html>
